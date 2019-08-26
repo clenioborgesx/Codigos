@@ -1,3 +1,7 @@
+# Aluno: Clênio Borges Barboza Filho
+# Introdução a programação 2019.2
+# Professor: Francisco
+
 resultado=0
 print("\n\n\nO programa vai o valor dos catetos e resolvera sua hipotenusa! (x1² + x2²=hipotenusa²) \n\n\n\n")
 valor1=float(input("Informe o primeiro cateto: \n"))

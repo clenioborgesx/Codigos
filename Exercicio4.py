@@ -1,3 +1,7 @@
+# Aluno: Clênio Borges Barboza Filho
+# Introdução a programação 2019.2
+# Professor: Francisco
+
 resultado=0
 print("\n\n\nO programa vai o valor duas notas e restornara sua media! (x1*0.2 + x2*0.3=media ponderada) \n\n\n\n")
 valor1=float(input("Informe o primeira nota: \n"))

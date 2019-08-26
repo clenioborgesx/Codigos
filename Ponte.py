@@ -1,3 +1,8 @@
+# Aluno: Clênio Borges Barboza Filho
+# Introdução a programação 2019.2
+# Professor: Francisco
+
+
 print("\n\nO programa serve para dizer quantos metros de cabo de aço será utilizado na ponte:\n\n")
 c1=int(input("Qual o comprimento da ponte em KM? :\n")) #Linha recebe o comprimento da ponte dada pelo usuário em KM
 c2=float((c1/2)*1000)                                   #Linha converte o comprimento informado pelo usuário em metro

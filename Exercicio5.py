@@ -1,3 +1,7 @@
+# Aluno: Clênio Borges Barboza Filho
+# Introdução a programação 2019.2
+# Professor: Francisco
+
 resultado=0
 print("\n\n\nO programa vai pedir o valor do produto e dara desconto de 10%! (x1-(x1*0.1)=preço novo) \n\n\n\n")
 valor1=float(input("Informe o preco do produto: \n"))

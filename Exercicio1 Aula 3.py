@@ -1,5 +1,6 @@
-# Clênio Borges
-#IFPE-2019.2
+# Aluno: Clênio Borges Barboza Filho
+# Introdução a programação 2019.2
+# Professor: Francisco
 
 print("\n\n\nEsse programa serve para verificar qual o numero maior dos 3 dados pelo user\n\n\n")
 num1=int(input("Informe o primeiro numero:"))

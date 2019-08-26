@@ -1,3 +1,7 @@
+# Aluno: Clênio Borges Barboza Filho
+# Introdução a programação 2019.2
+# Professor: Francisco
+
 peso1=0
 peso2=0
 print("\n\n\nO programa vai pedir o peso atual e calculará perca de 15% e acrescimo de 20%!\n\n\n\n")
