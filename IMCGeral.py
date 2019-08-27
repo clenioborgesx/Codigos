@@ -4,37 +4,37 @@
 # Introdução a programação 2019.2
 # Professor: Francisco
 
-contPeso=0
-contImc=0
-contAltura=0
-contador=0
-for i in range(10):
-    altura=float(input("Informe a altura do usuário {}: ".format(i+1)))
-    peso=float(input("Informe o peso do usuário {}: ".format(i+1)))
-    imc=float((peso)/(altura**2))
-    contPeso+=peso
-    contImc+=imc
-    contAltura+=altura
-    if imc < 17:
+contPeso=0                                                                                                 # Declaração dos Acumuladores: para o peso 
+contImc=0                                                                                                  # para o IMC
+contAltura=0                                                                                               # para a altura
+for i in range(10):                                                                                         # Laço de repetição e contagem i é o contador, i começa em 0 e vai até 09
+    altura=float(input("Informe a altura do usuário {}: ".format(i+1)))                                    # Recebe a altura informado pelo user
+    peso=float(input("Informe o peso do usuário {}: ".format(i+1)))                                        # Recebe o peso informado pelo user
+    imc=float((peso)/(altura**2))                                                                          # Calcula o IMC
+    contPeso+=peso                                                                                         # Incremento para o acumulador do peso
+    contImc+=imc                                                                                           # Incremento para o acumulador do IMC
+    contAltura+=altura                                                                                     # Incremento para o acumulador da Altura
+    if imc < 17:                                                                                           # Linhas abaixo dessa, mostra o IMC ao usuário e informa a situação
         print("O IMC do Usuário {} é: ".format(i+1),round(imc,2),"\nEle esta muito abaixo do peso!\n\n")
-    elif imc >= 17 and imc <= 18.49:
+    elif imc <= 18.49:
         print("O IMC do Usuário {} é: ".format(i+1),round(imc,2),"\nEle esta abaixo do peso!\n\n")
-    elif imc >= 18.5 and imc <= 24.99:
+    elif imc <= 24.99:
         print("O IMC do Usuário {} é: ".format(i+1),round(imc,2),"\nEle esta no peso ideal!\n\n")
-    elif imc >= 25 and imc <= 29.99:
+    elif imc <= 29.99:
         print("O IMC do Usuário {} é: ".format(i+1),round(imc,2),"\nEle esta acima do peso!\n\n")
-    elif imc >= 30 and imc <= 34.99:
+    elif imc <= 34.99:
         print("O IMC do Usuário {} é: ".format(i+1),round(imc,2),"\nEle esta com obesidade nivel 1!\n\n")
-    elif imc >= 35 and imc <= 39.99:
+    elif imc <= 39.99:
         print("O IMC do Usuário {} é: ".format(i+1),round(imc,2),"\nEle esta com obesidade nivel 2(Severa)\nDeve Procurar um especialista!\n\n")
-    elif imc >= 40:
+    else:
         print("O IMC do Usuário {} é: ".format(i+1),round(imc,2),"\nEle esta com obesidade nivel 3(Morbida)\nDeve procurar um especialista URGENTE!\n\n")
-    i+=1
-medPeso= float(contPeso/i)
-medAltura=float(contAltura/i)
-medImc=float(contImc/i)
-print("A média do Peso é: {:.2f}".format(medPeso))
-print("A média de Altura é: {:.2f}".format(medAltura))
-print("A média do IMC é: {:.2f}".format(medImc))
-print("\n\n")
+                                                                                                            # Fim da impressão do IMC e situação 
+    i+=1                                                                                                    # Incremento do contador que mantem o laço
+medPeso= float(contPeso/i)                                                                                  # Calculo da media do peso
+medAltura=float(contAltura/i)                                                                               # Calculo da media da altura
+medImc=float(contImc/i)                                                                                     # Calculo da media do IMC
+print("A média do Peso é: {:.2f}".format(medPeso))                                                          # Impressão dos resultados
+print("A média de Altura é: {:.2f}".format(medAltura))                                                      # Impressão dos resultados
+print("A média do IMC é: {:.2f}".format(medImc))                                                            # Impressão dos resultados
+print("\n\n")                                                                                               # Pula linhas por organização
         
