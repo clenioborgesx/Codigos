@@ -4,9 +4,8 @@
 # Introdução a programação 2019.2
 # Professor: Francisco
 base=int(input("Por favor informe a base: "))
-i=1
 j=1
-for i in range (base):
+for i in range (base+1):
     while i<=base:
         print(" ", end="")
         i+=1
