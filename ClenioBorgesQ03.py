@@ -61,3 +61,4 @@ else:
     print(f"c) A média dos números informados foi: {media:.2f}")
     print(f"d) Dos números informados, {contmulti} eram multiplos de 6!")
     print(f"e) A média dos dois últimos números informados foi: {mediaultimos:.2f}")
+    print(ultimo, penultimo)
