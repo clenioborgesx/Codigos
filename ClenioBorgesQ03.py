@@ -23,11 +23,11 @@ mediaultimos=float(0)
 numero=int(input("Informe o primeiro número: "))
 
 if numero <0:
-print(f"a) Você informou 1 números!")
-print(f"b) O maior número foi 0 e o menor número foi 0")
-print(f"c) A média dos números informados foi: 0")
-print(f"d) Dos números informados, 0 eram multiplos de 6!")
-print(f"e) A média dos dois últimos números informados foi: 0")
+    print(f"a) Você informou 1 números!")
+    print(f"b) O maior número foi 0 e o menor número foi 0")
+    print(f"c) A média dos números informados foi: 0")
+    print(f"d) Dos números informados, 0 eram multiplos de 6!")
+    print(f"e) A média dos dois últimos números informados foi: 0")
 else:
     contador+=1
     soma2=soma
@@ -46,8 +46,8 @@ else:
             contador+=1
             soma2=soma-numero
             soma+=numero
+            penultimo=ultimo
             ultimo=numero
-            penultimo=(soma-soma2)-numero
             if numero%6 == 0:
                 contmulti+=1
             if numero > maior:

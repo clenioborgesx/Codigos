@@ -22,7 +22,7 @@ kwh=int(input("Informe o consumo em KWh: "))
 while kwh < 1:
     print("\n\nO valor informado não confere, tente novamente!")
     kwh=int(input("Informe o consumo em KWh: "))
-base=float(0.04)
+base=float(0.72)
 conta=float(0.0)
 tarifa=float(0.0)
 if bandeira == 1:
@@ -41,7 +41,7 @@ elif bandeira == 3:
         conta+=tarifa
         kwh-=100
     conta+=(kwh*base)
-elif bandeira == 4:
+else:
     verm2=6.00
     while kwh >100:
         tarifa=(100*base)+verm2
