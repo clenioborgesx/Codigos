@@ -1,6 +1,6 @@
-
+primo=0
 # Entrada do usuário um número qualquer
-for num in range (1,10000,1):
+for num in range (1,1000000,1):
 # Calcula a raíz para otimizar a busca do programa, senão ele faria a verificação até o número e demoraria mais:
 # Observe que a raiz é inteira, pois o laço for não trabalha com FLOAT e só nos é útil por enquanto o valor inteiro
     composto=0
@@ -16,3 +16,5 @@ for num in range (1,10000,1):
     else:
             # Caso contrário ele só pode ser primo:
         print(f"O número {num} é primo!")
+        primo+=1
+print(f"Nesse intervalo você teve {primo} numeros primos!")
