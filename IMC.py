@@ -2,10 +2,14 @@
 # Aluno: Clênio Borges Barboza Filho
 # Introdução a programação 2019.2
 # Professor: Francisco
+# editado: Matheus Patriota
 
+# variables
 altura=float(input("Informe sua altura: "))
 peso=float(input("Informe seu peso: "))
 imc=float((peso)/(altura**2))
+
+# logic
 if imc < 17:
     print("Seu IMC eh: ",round(imc,2),"\nVoce esta muito abaixo do peso!")
 elif imc >= 17 and imc <= 18.49:
