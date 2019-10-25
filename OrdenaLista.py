@@ -23,7 +23,7 @@ def ordenalista(lista):
                 break
     return r
 # Lista aleátória para teste - Random List for teste
-Lista01 = [-5,7,4,-1,0]
+Lista01 = [15,7,4,-1,0]
 
 ListaOrd = ordenalista(Lista01)
 
