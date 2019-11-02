@@ -12,7 +12,7 @@ def ordenalista(lista):
         # laço de comparação da lista
         for j in range(i,0,-1):
             # compara se o item é maior que outro
-            # Insertion sort
+            # Insertion sort?
             if(r[j]<r[j-1]):
                 # atribui uma auxiliar para lista
                 # Troca de número
