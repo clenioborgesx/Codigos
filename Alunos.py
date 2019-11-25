@@ -10,10 +10,10 @@ def estaRegistrado(cpf) :
     return l[0]
   return ()
   
-for (cpf, nome, disciplinas) in alunos :
-    if cpfBuscado == cpf :
-      return (cpf, nome, disciplinas) # True
-return ()    # False
+  for (cpf, nome, disciplinas) in alunos :
+      if cpfBuscado == cpf :
+        return (cpf, nome, disciplinas) # True
+  return ()    # False
 
 
 def removerAlt(cpf) :
@@ -43,3 +43,26 @@ def remover(cpf) :
     if alunos[i][0] == cpf :
       del alunos[i]
     i = i + 1
+def opcoes():
+  print("1 - Cadastrar Aluno: ")
+  print("2 - Cadastrar Disciplina: ")
+  print("3 - Alterar Aluno: ")
+  print("4 - Alterar Disciplina: ")
+  print("5 - Sair ")
+  opc=int(input("Escolha sua opção: "))
+  if opc == 1:
+    cpf=input("Informe o CPF:")
+    nome=input("Informe o nome do aluno: ")
+#            codigo=input("Informe o código da disciplina: ")
+    inserir(cpf,nome)
+  arq1=open("ListaAlunos.txt", 'r', encoding='utf8')
+  lista=arq1.readlines()
+  lista.append(alunos)
+  arq1.close()
+  arq1=open("ListaAlunos.txt","w",encoding="utf8")
+  for i in lista:
+    arq1.write(str(i))
+  arq1.close()
+
+
+opcoes()
